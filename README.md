@@ -1,13 +1,15 @@
-# Template: Standard Robot Framework
+# Maria'S Task
 
-Want to get started using [Robot Framework](https://robocorp.com/docs/languages-and-frameworks/robot-framework/basics) this is the simplest template to start from.
+This Code includes the Robocorp Code for the Marias Task
 
-This template robot:
+the code is done on Visual Studio
+
+This robot:
 
 - Uses [Robot Framework](https://robocorp.com/docs/languages-and-frameworks/robot-framework/basics) syntax.
 - Includes all the necessary dependencies and initialization commands (`conda.yaml`).
 - Provides a simple task template to start from (`tasks.robot`).
 
-## Learning materials
+## Process definition
 
-- [All docs related to Robot Framework](https://robocorp.com/docs/languages-and-frameworks/robot-framework)
+- [All docs related to the process](https://robocorp.com/docs/courses/beginners-course/marias-task)
