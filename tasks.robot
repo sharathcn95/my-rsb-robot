@@ -44,11 +44,17 @@ Fill the form using the data from the Excel file
     Open Workbook    SalesData.xlsx
     ${sales_reps}=    Read Worksheet As Table    header=True
     Close Workbook
+    ${rows}=    Get Length    ${sales_reps}
+    IF    ${rows} == 0
+        Log    No of rows is zero in Excel
+        Fatal Error    No of rows is zero in Excel
+    END
     FOR    ${sales_rep}    IN    @{sales_reps}
         Fill and Submit the Form for One Person    ${sales_rep}
     END
 
 Collect the results
+    Wait Until Element Is Visible    css:div.sales-summary
     Screenshot    css:div.sales-summary    ${OUTPUT_DIR}${/}sales_summary.png
 
 Export table as PDF
